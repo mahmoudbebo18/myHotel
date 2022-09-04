@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Cairo-Bold";
+  src: url("../fonts/Cairo-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Cairo-Regular";
+  src: url("../fonts/Cairo-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Cairo-SemiBold";
+  src: url("../fonts/Cairo-SemiBold.ttf");
+  font-weight: 600;
+}
+body {
+  font-family: "Cairo-Regular";
+  text-align: start;
+  direction: rtl;
+}
+
+@media (max-width: 767px) {
+  .slider {
+    width: 100%;
+  }
+  .slider .carousel {
+    width: 100%;
+  }
+}
+.slider img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.items {
+  padding: 50px 0;
+}
+.items .wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #f1f1f1;
+  border: 1px solid #f1f1f1;
+  position: relative;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.items .wrapper .content {
+  padding: 16px;
+  flex: auto;
+}
+.items .wrapper .content h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.items .wrapper .content .rating {
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+.items .wrapper .content .rating i {
+  color: orange;
+}
+.items .wrapper .content .price {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .items .wrapper .content .price {
+    display: none;
+  }
+}
+.items .wrapper .content .features {
+  width: 45%;
+}
+@media (max-width: 991px) {
+  .items .wrapper .content .features {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .items .wrapper .content .features {
+    display: none !important;
+  }
+}
+.items .wrapper .content .features .feat .feat_contant {
+  margin-bottom: 16px;
+}
+.items .wrapper .content .features .feat .feat_contant svg {
+  fill: rgb(95, 99, 104);
+}
+.items .wrapper .content .features .feat .feat_contant span {
+  font-size: 13px;
+  -webkit-margin-start: 6px;
+          margin-inline-start: 6px;
+  color: rgb(95, 99, 104);
+}
+.items .wrapper .content .check_price {
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .items .wrapper .content .check_price {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+  }
+}
+@media (max-width: 425px) {
+  .items .wrapper .content .check_price {
+    bottom: 10px;
+    left: 10px;
+  }
+}
+.items .wrapper .content .check_price a {
+  padding: 8px 24px;
+  border-radius: 16px;
+  background-color: #007bff;
+  color: #fff;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+}/*# sourceMappingURL=style.css.map */

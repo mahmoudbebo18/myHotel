@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Cairo-Bold";
+  src: url("../fonts/Cairo-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Cairo-Regular";
+  src: url("../fonts/Cairo-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cairo-SemiBold";
+  src: url("../fonts/Cairo-SemiBold.ttf");
+  font-weight: 600;
+}
+
+$reg : "Cairo-Regular";
+$semiBold : "Cairo-SemiBold";
+$bold : "Cairo-Bold";
+
+body {
+  font-family: $reg;
+  text-align: start;
+  direction: rtl;
+}
+
+.slider {
+  @media(max-width:767px) {
+    width: 100%;
+
+    .carousel {
+      width: 100%;
+
+    }
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.items {
+  padding: 50px 0;
+
+  .wrapper {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 5px #f1f1f1;
+    border: 1px solid #f1f1f1;
+    position: relative;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+
+    .content {
+      padding: 16px;
+      flex: auto;
+
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .rating {
+        margin-bottom: 24px;
+        font-size: 15px;
+
+        i {
+          color: orange
+        }
+      }
+
+      .price {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        font-weight: bold;
+        font-size: 20px;
+
+        @media(max-width:767px) {
+          display: none;
+        }
+      }
+
+      .features {
+        width: 45%;
+
+        @media(max-width:991px) {
+          width: 100%;
+        }
+
+        @media(max-width:767px) {
+          display: none !important;
+        }
+
+        .feat {
+          .feat_contant {
+            margin-bottom: 16px;
+
+            svg {
+              fill: rgb(95, 99, 104);
+            }
+
+            span {
+              font-size: 13px;
+              margin-inline-start: 6px;
+              color: rgb(95, 99, 104)
+            }
+          }
+        }
+
+      }
+
+      .check_price {
+        text-align: left;
+
+        @media(max-width:767px) {
+          position: absolute;
+          left: 24px;
+          bottom: 24px;
+        }
+        @media(max-width:425px){
+          bottom: 10px;
+          left: 10px;
+        }
+
+        a {
+
+          padding: 8px 24px;
+          border-radius: 16px;
+          background-color: #007bff;
+          color: #fff;
+          display: block;
+          width: fit-content;
+          margin-inline-start: auto;
+
+        }
+      }
+    }
+  }
+}
